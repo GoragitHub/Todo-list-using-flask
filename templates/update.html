@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Home{% endblock title %}
+{% block body %}
+    
+    <div class="container my-3"><!--if we need the full space then we can use ".fluid" method-->
+        <h2>Update a todo</h2>
+        <form action="/update/{{todo.sno}}" method="POST">
+            <div class="mb-3">
+              <label for="title" class="form-label">Todo title</label>
+              <input type="text" class="form-control" name="title" id="title" value="{{todo.title}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Todo description</label>
+              <input type="text" class="form-control" name="description" id="description" value="{{todo.description}}">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+          </form>
+    </div>
+    {% endblock body %}
