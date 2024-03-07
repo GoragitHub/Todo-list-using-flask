@@ -1,2 +1,3 @@
 # todo-list-using-flask
- This is a simple Todo list with CRUD operation
+ This is a flask application of Todo list with CRUD operation. I have implement this application by content of codewithharry("https://www.codewithharry.com") 
+ 
